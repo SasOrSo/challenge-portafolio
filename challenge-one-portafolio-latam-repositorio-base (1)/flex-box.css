@@ -1,0 +1,90 @@
+/* Menu */
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+/* Titulo */
+
+.title__div{
+    display: flex;
+    justify-content: center;
+}
+
+.title_description{
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+     padding: 20px;
+}
+
+.title__bio{
+    margin-top: 50px;
+}
+
+.title__subsection{
+    display: flex;
+    align-self: center;
+}
+
+/* Skills */
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Formación académica */
+
+.academic__courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*Experiencia Profesional*/
+
+.experience__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.experience__img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+/* Contacto */
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

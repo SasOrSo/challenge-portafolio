@@ -1,0 +1,337 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poiret One';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+.menu{
+    text-transform: uppercase;
+    background-color: #D68A9A;
+}
+
+
+.menu__list{
+    margin-right: 75px;
+    color: white;
+    height: 20px;
+}
+
+.menu__list__item:hover {
+    font-style:italic;
+    text-decoration: underline;
+}
+
+a:hover i {
+    transform: scale(1.5);
+}
+
+/*Sección Title*/
+
+.title{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.title img{
+    width: 300px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.title__bio{
+    font-size: 50px;
+}
+
+.title__subsection{
+    font-size: 25px;
+}
+
+.title_description{
+    font-style: italic;
+    color: white;
+    background-color: #D68A9A;
+    border-radius: 20px 10px;
+    width: 600px;
+}
+
+/*Sección Sobre mi*/
+
+.about{
+    display: block;
+    margin: 90px;
+    padding: 15px;
+    width: 80%;
+    text-align: left;
+    font-size: 26px;
+}
+
+.about__title{
+    text-transform: uppercase;
+}
+
+
+/* Skills*/
+
+.skills {
+    margin-bottom: 120px;
+}
+
+.skills__title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.skills__box img{
+    width: 150px;
+    height: 150px;
+    padding: 60px;
+    border-radius: 15px 50px;
+    background-color: #D68A9A; /*cambiar color */
+    box-shadow: 10px 10px 5px rgb(226, 234, 236);
+}
+
+
+/*Formación académica*/
+
+.academic {
+    margin-top: 200px;
+}
+
+.academic__title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.academic__courses__box img{
+    width: 150px;
+    height: 150px;
+}
+
+.academic__courses__item__img {
+    width: 150px;
+    height: 150px;
+    padding: 60px;
+}
+
+.academic__courses__item__title {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.academic__courses__item__subtitle {
+    text-align: right;
+}
+
+/*Experiencia Profesional*/
+
+.experience {
+    margin-top: 200px;
+    width: 100%;
+}
+
+.experience__section__title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.experience__box h2{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.experience__box h3{
+    font-style: italic;
+}
+
+.experience_buttons {
+    margin: 30px;
+}
+
+.experiencia__botao--repo, .experience__botao--demo {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 60px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgb(225, 230, 231);
+}
+
+.experiencia__botao--repo:hover, .experience__botao--demo:hover {
+    font-size: 20px;
+    transition: background-color 0.5s;
+}
+
+.experience__img {
+    width: 45%;
+    height: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Contacto*/
+
+.formcontato__text{
+    margin: 100px 0 5px 45px;
+    text-align: center;
+}
+
+ .formcontato__input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+ }
+
+ .formcontato__textarea{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    resize: none;
+ }
+
+ .formcontato__botao{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgb(225, 230, 231);
+ }
+
+ .formcontato__botao:hover{
+    font-size: medium;
+ }
+
+/*Footeer*/
+
+.footer{
+    font-style: italic;
+    text-align: center;
+    margin: 75px 0 15px 0;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional
+
+.experience{
+    margin: 5px 0 5px 45px;
+}   
+
+.experience__title{
+    margin-top: 20px;
+}
+
+.experiencia__botao--repo, .experience__botao--demo{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px; 
+    margin: 10px 10px 35px 0;
+}
+
+ /*Contacto
+
+.formcontato__text{
+    margin: 5px 0 5px 45px;
+}
+
+ .formcontato__input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+ }
+
+ .formcontato__textarea{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+ }
+
+ .formcontato__botao{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+ }
+
+ .formcontato__botao:hover{
+    font-size: medium;
+ }
+ 
+/*Footer*/
+
+}
